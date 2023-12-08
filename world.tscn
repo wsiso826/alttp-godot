@@ -1,0 +1,42 @@
+[gd_scene load_steps=8 format=3 uid="uid://b7qpcn5cggcu5"]
+
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_7rchs"]
+[ext_resource type="Texture2D" uid="uid://fbjsgw4equpc" path="res://SNES - The Legend of Zelda A Link to the Past - Light World.png" id="2_rmbsy"]
+[ext_resource type="PackedScene" uid="uid://d0rtrstsnbv3h" path="res://player.tscn" id="4_b2ned"]
+[ext_resource type="Texture2D" uid="uid://b70a4w81tvtk5" path="res://addons/sprite-shader-mixer/assets/Link Sprites alpha walkingdownnosword.png" id="4_fwm4y"]
+
+[sub_resource type="Environment" id="Environment_anx2f"]
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_236b1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_adccw"]
+
+[node name="World" type="Node2D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_anx2f")
+camera_attributes = SubResource("CameraAttributesPractical_236b1")
+
+[node name="Snes-TheLegendOfZeldaALinkToThePast-LightWorld" type="Sprite2D" parent="."]
+z_index = 15
+position = Vector2(147, -307)
+texture = ExtResource("2_rmbsy")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+z_index = 15
+position = Vector2(127, 101)
+script = ExtResource("1_7rchs")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("4_fwm4y")
+hframes = 9
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(11, -3)
+scale = Vector2(167.069, 210.637)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_adccw")
+
+[node name="Player" parent="CharacterBody2D" instance=ExtResource("4_b2ned")]
