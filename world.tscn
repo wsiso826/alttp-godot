@@ -3,11 +3,13 @@
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_7rchs"]
 [ext_resource type="Texture2D" uid="uid://fbjsgw4equpc" path="res://SNES - The Legend of Zelda A Link to the Past - Light World.png" id="2_rmbsy"]
 [ext_resource type="PackedScene" uid="uid://d0rtrstsnbv3h" path="res://player.tscn" id="4_b2ned"]
-[ext_resource type="Texture2D" uid="uid://b70a4w81tvtk5" path="res://addons/sprite-shader-mixer/assets/Link Sprites alpha walkingdownnosword.png" id="4_fwm4y"]
 
 [sub_resource type="Environment" id="Environment_anx2f"]
 
 [sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_236b1"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_41l0a"]
+load_path = "res://.godot/imported/Link Sprites alpha walkingdownnosword.png-326bfca9fea415487b62f4eadd41e773.ctex"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_adccw"]
 
@@ -29,7 +31,7 @@ script = ExtResource("1_7rchs")
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = ExtResource("4_fwm4y")
+texture = SubResource("CompressedTexture2D_41l0a")
 hframes = 9
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]

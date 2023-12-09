@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bx277vsehjsi0"
-path="res://.godot/imported/Link Sprite Front2.png-0e162ff4252b574a19f33432aa56cfca.ctex"
+uid="uid://2h10ki870pr"
+path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Kakariko Village Tiles.png-f99773394b08e53d5e64ab7dbfa8b064.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Link Sprite Front2.png"
-dest_files=["res://.godot/imported/Link Sprite Front2.png-0e162ff4252b574a19f33432aa56cfca.ctex"]
+source_file="res://Sprites/SNES - The Legend of Zelda A Link to the Past - Kakariko Village Tiles.png"
+dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Kakariko Village Tiles.png-f99773394b08e53d5e64ab7dbfa8b064.ctex"]
 
 [params]
 

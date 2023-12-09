@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6yuggcrrc7pc"
-path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Hyrule Castle Interior.png-59a76765e9b685862f429d0eeee0334b.ctex"
+uid="uid://kp8we6glf7k5"
+path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - HUD.png-faa4a79070b2090a042a31a375e6562d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SNES - The Legend of Zelda A Link to the Past - Hyrule Castle Interior.png"
-dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Hyrule Castle Interior.png-59a76765e9b685862f429d0eeee0334b.ctex"]
+source_file="res://Sprites/SNES - The Legend of Zelda A Link to the Past - HUD.png"
+dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - HUD.png-faa4a79070b2090a042a31a375e6562d.ctex"]
 
 [params]
 

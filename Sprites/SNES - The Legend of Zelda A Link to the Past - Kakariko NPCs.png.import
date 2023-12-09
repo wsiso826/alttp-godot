@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://12muxeq4uixx"
-path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Other Light World NPCs.png-eec01a44561b0901441dafc0f14e914b.ctex"
+uid="uid://cawak3yn47cwo"
+path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Kakariko NPCs.png-4d88886a4c0e68c4346754910d090d66.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SNES - The Legend of Zelda A Link to the Past - Other Light World NPCs.png"
-dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Other Light World NPCs.png-eec01a44561b0901441dafc0f14e914b.ctex"]
+source_file="res://Sprites/SNES - The Legend of Zelda A Link to the Past - Kakariko NPCs.png"
+dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Kakariko NPCs.png-4d88886a4c0e68c4346754910d090d66.ctex"]
 
 [params]
 

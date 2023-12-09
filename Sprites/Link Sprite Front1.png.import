@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dho4ksy3yoial"
-path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Lost Woods Tiles.png-788eb6c1f8ca76e9c0e05d2664a06e9d.ctex"
+uid="uid://capiecmte3r3n"
+path="res://.godot/imported/Link Sprite Front1.png-ea63d95fabb1e41caf732cd74d57762a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SNES - The Legend of Zelda A Link to the Past - Lost Woods Tiles.png"
-dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Lost Woods Tiles.png-788eb6c1f8ca76e9c0e05d2664a06e9d.ctex"]
+source_file="res://Sprites/Link Sprite Front1.png"
+dest_files=["res://.godot/imported/Link Sprite Front1.png-ea63d95fabb1e41caf732cd74d57762a.ctex"]
 
 [params]
 

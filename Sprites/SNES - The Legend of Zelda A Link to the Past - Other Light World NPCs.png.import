@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kp8we6glf7k5"
-path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - HUD.png-0589c7915f6f1e129c6f42023eae393d.ctex"
+uid="uid://12muxeq4uixx"
+path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Other Light World NPCs.png-7a7c57a4bfa2761e28d137476b99d1f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SNES - The Legend of Zelda A Link to the Past - HUD.png"
-dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - HUD.png-0589c7915f6f1e129c6f42023eae393d.ctex"]
+source_file="res://Sprites/SNES - The Legend of Zelda A Link to the Past - Other Light World NPCs.png"
+dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Other Light World NPCs.png-7a7c57a4bfa2761e28d137476b99d1f9.ctex"]
 
 [params]
 

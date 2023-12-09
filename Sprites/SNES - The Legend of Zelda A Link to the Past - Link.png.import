@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clwywsqpy5o03"
-path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Link Parts.png-ab409dd711337b1d950b2cb314659fd0.ctex"
+uid="uid://6il4ckrivwnv"
+path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Link.png-b48bfbe22efc01f1edc6891a2b6d7642.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SNES - The Legend of Zelda A Link to the Past - Link Parts.png"
-dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Link Parts.png-ab409dd711337b1d950b2cb314659fd0.ctex"]
+source_file="res://Sprites/SNES - The Legend of Zelda A Link to the Past - Link.png"
+dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Link.png-b48bfbe22efc01f1edc6891a2b6d7642.ctex"]
 
 [params]
 

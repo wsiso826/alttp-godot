@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bu5ls1x0ffjjo"
-path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Items Overworld.png-1a63ec290a8827a707b5dcdaef842ace.ctex"
+path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Items Overworld.png-0640e01bfd20fb0577c4d68149aad40b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SNES - The Legend of Zelda A Link to the Past - Items Overworld.png"
-dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Items Overworld.png-1a63ec290a8827a707b5dcdaef842ace.ctex"]
+source_file="res://Sprites/SNES - The Legend of Zelda A Link to the Past - Items Overworld.png"
+dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Items Overworld.png-0640e01bfd20fb0577c4d68149aad40b.ctex"]
 
 [params]
 

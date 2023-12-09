@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6il4ckrivwnv"
-path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Link.png-4cf1a42c08af214271d4cb6071b4c128.ctex"
+uid="uid://kg62oqm1616s"
+path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Hylian Knights.png-dbf5755ec636c1417209dd4ace259f75.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SNES - The Legend of Zelda A Link to the Past - Link.png"
-dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Link.png-4cf1a42c08af214271d4cb6071b4c128.ctex"]
+source_file="res://Sprites/SNES - The Legend of Zelda A Link to the Past - Hylian Knights.png"
+dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Hylian Knights.png-dbf5755ec636c1417209dd4ace259f75.ctex"]
 
 [params]
 

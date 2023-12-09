@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cy7r1y38lofyp"
-path="res://.godot/imported/Who want to replay the original Legend of Zelda - Imgur.png-575c2e5e9e9334e215dfacd863ee20fb.ctex"
+uid="uid://dvjly13qdyh7p"
+path="res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Hyrule Map.png-3da4ee22661b79becba7f6aa3cd29fb4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Who want to replay the original Legend of Zelda - Imgur.png"
-dest_files=["res://.godot/imported/Who want to replay the original Legend of Zelda - Imgur.png-575c2e5e9e9334e215dfacd863ee20fb.ctex"]
+source_file="res://Sprites/SNES - The Legend of Zelda A Link to the Past - Hyrule Map.png"
+dest_files=["res://.godot/imported/SNES - The Legend of Zelda A Link to the Past - Hyrule Map.png-3da4ee22661b79becba7f6aa3cd29fb4.ctex"]
 
 [params]
 
