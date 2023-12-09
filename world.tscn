@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://b7qpcn5cggcu5"]
 
-[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_7rchs"]
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="2_7f0kl"]
 [ext_resource type="Texture2D" uid="uid://fbjsgw4equpc" path="res://Sprites/SNES - The Legend of Zelda A Link to the Past - Light World.png" id="2_rmbsy"]
 [ext_resource type="PackedScene" uid="uid://d0rtrstsnbv3h" path="res://player.tscn" id="4_b2ned"]
 
@@ -26,7 +26,7 @@ texture = ExtResource("2_rmbsy")
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 z_index = 15
 position = Vector2(127, 101)
-script = ExtResource("1_7rchs")
+script = ExtResource("2_7f0kl")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 texture = SubResource("CompressedTexture2D_41l0a")
