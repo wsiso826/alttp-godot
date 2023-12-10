@@ -11,4 +11,13 @@ func _physics_process(delta):
 		$AnimationPlayer.play("WalkLeft");
 	elif Input.is_action_just_pressed("ui_up"):
 		$AnimationPlayer.play("WalkUp");
+	
+	if Input.is_action_just_released("down"):
+		$AnimationPlayer.play("IdleDown");
+	if Input.is_action_just_released("left"):
+		$AnimationPlayer.play("IdleLeft");
+	if Input.is_action_just_released("right"):
+		$AnimationPlayer.play("IdleRight");
+	if Input.is_action_just_released("up"):
+		$AnimationPlayer.play("IdleUp");
 
