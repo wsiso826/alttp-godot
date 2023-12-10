@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://cg0se3t7gwqr4"]
+[gd_scene load_steps=9 format=3 uid="uid://cg0se3t7gwqr4"]
 
 [ext_resource type="Texture2D" uid="uid://ctigwd5qbn780" path="res://Sprites/WorldSprites/GrassSprite.png" id="1_dlsys"]
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="2_i6mra"]
+[ext_resource type="PackedScene" uid="uid://cfrbg0ctltybn" path="res://main_player.tscn" id="3_1hc3k"]
 [ext_resource type="PackedScene" uid="uid://d0rtrstsnbv3h" path="res://player.tscn" id="3_s1ash"]
 [ext_resource type="Texture2D" uid="uid://dt4boe6cvc8j2" path="res://Sprites/WorldSprites/BushSprite.png" id="4_l0dqe"]
 [ext_resource type="Texture2D" uid="uid://c8aft33jvmi6e" path="res://Sprites/WorldSprites/BushCutSprite.png" id="5_5k4ep"]
@@ -11,6 +12,29 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_c0tde"]
 
 [node name="NewWorld" type="Node2D"]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+z_index = 15
+position = Vector2(127, 101)
+script = ExtResource("2_i6mra")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = SubResource("CompressedTexture2D_xed6o")
+hframes = 9
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(11, -3)
+scale = Vector2(167.069, 210.637)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("CircleShape2D_c0tde")
+
+[node name="Player" parent="CharacterBody2D" instance=ExtResource("3_s1ash")]
+visible = false
+position = Vector2(-130, -96)
+
+[node name="MainPlayer" parent="CharacterBody2D" instance=ExtResource("3_1hc3k")]
+position = Vector2(-130, -96)
 
 [node name="GrassSprite" type="Sprite2D" parent="."]
 position = Vector2(8, 8)
@@ -971,25 +995,6 @@ texture = ExtResource("1_dlsys")
 [node name="GrassSprite27" type="Sprite2D" parent="GrassSprite/GrassSprite34/GrassSprite33/GrassSprite"]
 position = Vector2(48, 48)
 texture = ExtResource("1_dlsys")
-
-[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-z_index = 15
-position = Vector2(127, 101)
-script = ExtResource("2_i6mra")
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
-texture = SubResource("CompressedTexture2D_xed6o")
-hframes = 9
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-position = Vector2(11, -3)
-scale = Vector2(167.069, 210.637)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-shape = SubResource("CircleShape2D_c0tde")
-
-[node name="Player" parent="CharacterBody2D" instance=ExtResource("3_s1ash")]
-position = Vector2(-130, -96)
 
 [node name="BushSprite" type="Sprite2D" parent="."]
 position = Vector2(56, 136)
