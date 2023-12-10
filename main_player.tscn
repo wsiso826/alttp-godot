@@ -1,78 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://cfrbg0ctltybn"]
+[gd_scene load_steps=18 format=3 uid="uid://cfrbg0ctltybn"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_jabj8"]
 [ext_resource type="Texture2D" uid="uid://bd68eri1e48il" path="res://Sprites/newlink_sprite_0.png" id="1_tnyg8"]
-
-[sub_resource type="Animation" id="Animation_u06yu"]
-length = 0.001
-
-[sub_resource type="Animation" id="Animation_08juu"]
-resource_name = "WalkDown"
-length = 0.8
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [0, 1, 2, 3, 4, 5, 6, 7]
-}
-
-[sub_resource type="Animation" id="Animation_13kp4"]
-resource_name = "WalkLeft"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [8, 9, 10, 11, 12, 13]
-}
-
-[sub_resource type="Animation" id="Animation_w0qri"]
-resource_name = "WalkRight"
-length = 0.6
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [22, 23, 24, 25, 26, 27]
-}
-
-[sub_resource type="Animation" id="Animation_kmoim"]
-resource_name = "WalkUp"
-length = 0.8
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
-"update": 1,
-"values": [14, 15, 16, 17, 18, 19, 20, 21]
-}
+[ext_resource type="Texture2D" uid="uid://xy88t5j8xxfl" path="res://Sprites/SwordAttackbroken_sprite_0.png" id="3_cnfn3"]
 
 [sub_resource type="Animation" id="Animation_mlv26"]
 resource_name = "IdleDown"
@@ -81,7 +11,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("MainPlayerWalkingSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -98,7 +28,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("MainPlayerWalkingSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -115,7 +45,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("MainPlayerWalkingSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -132,7 +62,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("MainPlayerWalkingSprite:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -142,6 +72,145 @@ tracks/0/keys = {
 "values": [14]
 }
 
+[sub_resource type="Animation" id="Animation_u06yu"]
+length = 0.001
+
+[sub_resource type="Animation" id="Animation_08juu"]
+resource_name = "WalkDown"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainPlayerWalkingSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_13kp4"]
+resource_name = "WalkLeft"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainPlayerWalkingSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [8, 9, 10, 11, 12, 13]
+}
+
+[sub_resource type="Animation" id="Animation_w0qri"]
+resource_name = "WalkRight"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainPlayerWalkingSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [22, 23, 24, 25, 26, 27]
+}
+
+[sub_resource type="Animation" id="Animation_kmoim"]
+resource_name = "WalkUp"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainPlayerWalkingSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [14, 15, 16, 17, 18, 19, 20, 21]
+}
+
+[sub_resource type="Animation" id="Animation_wn3mb"]
+resource_name = "SwordAttackUp"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainPlayerSwordAtackSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+
+[sub_resource type="Animation" id="Animation_rgr8q"]
+resource_name = "SwordAttackRight"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainPlayerSwordAtackSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [5, 6, 7, 8, 9]
+}
+
+[sub_resource type="Animation" id="Animation_akc27"]
+resource_name = "SwordAttackLeft"
+length = 0.5
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainPlayerSwordAtackSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [10, 11, 12, 13, 14]
+}
+
+[sub_resource type="Animation" id="Animation_unfvj"]
+resource_name = "SwordAttackDown"
+length = 0.6
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MainPlayerSwordAtackSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [16, 17, 18, 19, 20, 20]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7dpq4"]
 _data = {
 "IdleDown": SubResource("Animation_mlv26"),
@@ -149,6 +218,10 @@ _data = {
 "IdleRight": SubResource("Animation_x4kok"),
 "IdleUp": SubResource("Animation_3jl1p"),
 "RESET": SubResource("Animation_u06yu"),
+"SwordAttackDown": SubResource("Animation_unfvj"),
+"SwordAttackLeft": SubResource("Animation_akc27"),
+"SwordAttackRight": SubResource("Animation_rgr8q"),
+"SwordAttackUp": SubResource("Animation_wn3mb"),
 "WalkDown": SubResource("Animation_08juu"),
 "WalkLeft": SubResource("Animation_13kp4"),
 "WalkRight": SubResource("Animation_w0qri"),
@@ -158,11 +231,17 @@ _data = {
 [node name="MainPlayer" type="CharacterBody2D"]
 script = ExtResource("1_jabj8")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="MainPlayerWalkingSprite" type="Sprite2D" parent="."]
 position = Vector2(160, 81)
 texture = ExtResource("1_tnyg8")
 hframes = 28
-frame = 14
+
+[node name="MainPlayerSwordAtackSprite" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(400, 81)
+texture = ExtResource("3_cnfn3")
+hframes = 21
+frame = 16
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

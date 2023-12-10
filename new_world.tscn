@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://cg0se3t7gwqr4"]
+[gd_scene load_steps=15 format=3 uid="uid://cg0se3t7gwqr4"]
 
 [ext_resource type="Texture2D" uid="uid://ctigwd5qbn780" path="res://Sprites/WorldSprites/GrassSprite.png" id="1_dlsys"]
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="2_i6mra"]
 [ext_resource type="PackedScene" uid="uid://cfrbg0ctltybn" path="res://main_player.tscn" id="3_1hc3k"]
 [ext_resource type="Texture2D" uid="uid://dt4boe6cvc8j2" path="res://Sprites/WorldSprites/BushSprite.png" id="4_l0dqe"]
 [ext_resource type="Texture2D" uid="uid://c8aft33jvmi6e" path="res://Sprites/WorldSprites/BushCutSprite.png" id="5_5k4ep"]
+[ext_resource type="AudioStream" uid="uid://t0tuvph7y245" path="res://Audio/Music/10 papo - a link to the grass.mp3" id="6_lj2hy"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yahp8"]
 radius = 8.0
@@ -1186,3 +1187,7 @@ metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Border 6"]
 shape = SubResource("WorldBoundaryShape2D_fmybi")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_lj2hy")
+autoplay = true
