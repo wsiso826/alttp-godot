@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://cg0se3t7gwqr4"]
+[gd_scene load_steps=14 format=3 uid="uid://cg0se3t7gwqr4"]
 
 [ext_resource type="Texture2D" uid="uid://ctigwd5qbn780" path="res://Sprites/WorldSprites/GrassSprite.png" id="1_dlsys"]
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="2_i6mra"]
@@ -12,6 +12,27 @@ height = 16.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2rep1"]
 size = Vector2(12, 12)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_coaiy"]
+distance = 62.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_cfujq"]
+normal = Vector2(0, 1)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_1v5dt"]
+normal = Vector2(0, 1)
+distance = -194.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_o8gc6"]
+normal = Vector2(1, 0)
+distance = -78.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_chtvp"]
+normal = Vector2(-1, 0)
+distance = -78.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fmybi"]
+distance = 21.0
 
 [node name="NewWorld" type="Node2D"]
 
@@ -1126,3 +1147,42 @@ shape = SubResource("RectangleShape2D_2rep1")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(120, 135)
 shape = SubResource("RectangleShape2D_2rep1")
+
+[node name="Border" type="StaticBody2D" parent="."]
+position = Vector2(97, 254)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border"]
+shape = SubResource("WorldBoundaryShape2D_coaiy")
+
+[node name="Border2" type="StaticBody2D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border2"]
+position = Vector2(100, 0)
+shape = SubResource("WorldBoundaryShape2D_cfujq")
+
+[node name="Border 3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border 3"]
+position = Vector2(222, 194)
+shape = SubResource("WorldBoundaryShape2D_1v5dt")
+
+[node name="Border 4" type="StaticBody2D" parent="."]
+position = Vector2(78, 94)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border 4"]
+shape = SubResource("WorldBoundaryShape2D_o8gc6")
+
+[node name="Border 5" type="StaticBody2D" parent="."]
+position = Vector2(243, 98)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border 5"]
+shape = SubResource("WorldBoundaryShape2D_chtvp")
+
+[node name="Border 6" type="StaticBody2D" parent="."]
+position = Vector2(231, 214)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border 6"]
+shape = SubResource("WorldBoundaryShape2D_fmybi")
