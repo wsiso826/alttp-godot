@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drs8oi6vhg57k"
-path="res://.godot/imported/newlinkwalkspritedemo_sprite_0.png-841873600bbe61977194906195ccccb4.ctex"
+uid="uid://djssocb1luwec"
+path="res://.godot/imported/LinkWalkandSwordAttack_sprite_0.png-57b7f003eae61b06d5a22c417212533b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/WorldSprites/newlinkwalkspritedemo_sprite_0.png"
-dest_files=["res://.godot/imported/newlinkwalkspritedemo_sprite_0.png-841873600bbe61977194906195ccccb4.ctex"]
+source_file="res://Sprites/Link Sprites/LinkWalkandSwordAttack_sprite_0.png"
+dest_files=["res://.godot/imported/LinkWalkandSwordAttack_sprite_0.png-57b7f003eae61b06d5a22c417212533b.ctex"]
 
 [params]
 

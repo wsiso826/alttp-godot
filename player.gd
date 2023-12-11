@@ -5,7 +5,6 @@ extends CharacterBody2D
 func _physics_process(delta): 
 	
 	#Movement when direction button pressed
-	
 	if Input.is_action_just_pressed("down"):
 		$AnimationPlayer.play("WalkDown");
 	elif Input.is_action_just_pressed("right"):
@@ -16,7 +15,6 @@ func _physics_process(delta):
 		$AnimationPlayer.play("WalkUp");
 	
 	#Idle Position after direction button is released
-	
 	if Input.is_action_just_released("down"):
 		$AnimationPlayer.play("IdleDown");
 	if Input.is_action_just_released("left"):
@@ -27,10 +25,11 @@ func _physics_process(delta):
 		$AnimationPlayer.play("IdleUp");
 		
 	#Sword attack animation when attack button pressed
-	
 	if Input.is_action_just_pressed("ui_text_backspace"):
 		#$animationplayer.current_animation==("WalkDown")
 		$AnimationPlayer.play("SwordAttackDown")
-	
+	if Input.is_action_just_pressed("ui_text_backspace"):
+		#$animationplayer.current_animation==("WalkRight")
+		$AnimationPlayer.play("SwordAttackRight")
 	
 
